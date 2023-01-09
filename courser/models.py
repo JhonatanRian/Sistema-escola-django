@@ -1,4 +1,10 @@
 from django.db import models
+from uuid import uuid4
+
+def get_file_path(_instance, filename: str):
+    ext = filename.split(".")[-1]
+    filename = f'courses/images/{uuid4()}.{ext}'
+    return filename
 
 
 class CourseManager(models.Manager):
@@ -19,7 +25,7 @@ class Course(models.Model):
         'Data de Início', null=True, blank=True
     )
     image = models.ImageField(
-        upload_to='courses/images', verbose_name='Imagem',
+        upload_to=get_file_path, verbose_name='Imagem',
         null=True, blank=True
     )
 

@@ -1,0 +1,20 @@
+{% load static %}
+{% block content %}
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img class="bi me-2" width="100" src="{% static 'images/logo.png' %}"></img>
+                <span class="fs-4 text-light">School-Courser</span>
+            </a>
+
+            <ul class="nav nav-pills mt-4">
+                <li class="nav-item"><a href="#" class="nav-link item-show" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Recursos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Preços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Cursos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+            </ul>
+        </header>
+    </div>
+        
+{% endblock%}

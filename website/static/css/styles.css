@@ -1,78 +1,155 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+.color1 { #000000 };
+.color2 { #7890a8 };
+.color3 { #304878 };
+.color4 { #181848 };
+.color5 { #f0a818 };
+
+main {
+    font-family: 'Sofia Sans', sans-serif;
+    min-height: 75rem;
+    padding-top: 4.5rem;
 }
-body {
-    margin: 0 auto;
-    line-height: 1.7em;
+
+h1 {
+    font-family: 'Sofia Sans', sans-serif;
 }
-.content {
-    padding-top: 2em;
+
+.text-color-light {
+    color: #F8F9FA ;
 }
+
+.text-color5 {
+    color: #f0a818 ;
+}
+
+.text-color4 {
+    color: #181848 ;
+}
+
+.background_color1 {
+    background-color: #000000;
+}
+
+.background_color2 {
+    background-color: #7890a8 !important;
+}
+
+.background_color3 {
+    background-color: #304878;
+}
+
+.background_color4 {
+    background-color: #181848;
+}
+
+.background_color5 {
+    background-color: #f0a818;
+}
+
+.me_card {
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 15px;
+    border-radius: 35px;
+}
+
+.me_card2 {
+    padding: 35px;
+    border-radius: 35px;
+}
+
+.me_card3 {
+    padding: 35px;
+    border-radius: 35px;
+    opacity: 0.5px;
+}
+
+.me_page {
+    background: #f0a818 url("/static/images/papel_de_parede.png"); 
+    padding-top: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    box-shadow: 5px solid #f0a818;
+}
+
+
+.me_img_right {
+    float: right;
+}
+
+.me_img_left {
+    float: left;
+}
+
+body > main > div.p-5.background_color2.me_card > div.card.rounded.background_color2{
+    padding: 20px;
+}
+
+body > main > div.background_color5.me_page > div.me_card.background_color3 > div > h1 {
+    margin-bottom: 35px;
+}
+
+body > main > div.background_color5.me_page > div.me_card.background_color3 > div > h1 > span {
+    color: #F8F9FA;
+    text-shadow: 0.1em 0.1em 0.1em #181848;
+}
+
+body > main > div.background_color5.me_page > div.me_card.background_color3 > div > h2 {
+    color: #7890a8;
+    text-shadow: 0.1em 0.1em 0.1em #181848;
+}
+
+body > main > div.background_color5.me_page > div.me_card.background_color3.mt-2 > div > h4 {
+    color: #F8F9FA;
+    text-shadow: 0.1em 0.1em 0.1em #181848;
+}
+
+body > main > div.background_color5.me_page.row > div.me_card2.background_color3.mt-2.col-sm-8 > div > p {
+    color: #F8F9FA;
+    text-shadow: 0.1em 0.1em 0.1em #181848;
+}
+
+body > main > div.container > header > ul > li .nav-link {
+    background-color: #7890a8;
+    color: #F8F9FA;
+    margin-right: 4px;
+}
+
+.item-show {
+    background-color: #f0a818 !important;
+    color: #181848 !important;
+}
+
+body > main > div.background_color5.me_page.row > div.me_card3.mt-3.background_color3 > img {
+    width: 150px;
+    float: right;
+}
+
+body > main > div.background_color5.me_page.row > div.me_card3.mt-3.background_color3 > div > div > h3 {
+    color: #F8F9FA;
+    text-shadow: 0.1em 0.1em 0.1em #181848;
+}
+
 .l-box {
-    padding: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
 }
-.header {
-    margin: 0 0;
+
+.l-box2 {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
 }
-.header .pure-menu {
-    padding: 0.5em;
-}
-.header .pure-menu li a:hover,
-.header .pure-menu li a:focus {
-    background: none;
-    border: none;
-    color: #aaa;
-}
-body .primary-button {
-    background: #02a6eb;
-    color: #fff;
-}
-.splash {
-    margin: 0 auto;
-    padding: 1.5em 1em 0;
-    background: #eee;
-}
-.splash .splash-head {
-    font-size: 300%;
-    margin: 0em 0;
-    line-height: 1.2em;
-}
-.splash .splash-subhead {
-    color: #999;
-    font-weight: 300;
-    line-height: 1.4em;
-}
-.splash .primary-button {
-    font-size: 150%;
-}
-.content .content-subhead {
-    color: #999;
-    padding-bottom: 0.3em;
-    text-transform: uppercase;
-    margin: 0;
-    border-bottom: 2px solid #eee;
-    display: inline-block;
-}
-.content .content-ribbon {
-    margin: 3em;
-    border-bottom: 1px solid #eee;
-}
-.ribbon {
-    background: #eee;
-    text-align: center;
-    padding: 2em;
-    color: #999;
-}
-.ribbon h2 {
-    display: inline;
-    font-weight: normal;
-}
-.footer {
-    background: #111;
-    color: #666;
-    text-align: center;
-    padding: 1em;
-    font-size: 80%;
+
+.text-lite {
+    color: #F8F9FA;
+    text-shadow: 0.1em 0.1em 0.1em #181848;   
 }

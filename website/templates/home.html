@@ -2,13 +2,13 @@
 {% load static %}
 
 {% block content %}
-    
-    <main class="container">
-        {% include 'navbar.html' %}
+        
+    {% include 'navbar.html' %}
+
+    <main class="container-fluid">
         <div class="background_color5 me_page row">
-            <div class="me_card background_color3 col-sm-12">
-                <img class="w-25 me_img_right" src="{% static 'images/educacao-online.png' %}">
-                <div class="me_card2">
+            <div class="me_card col-sm-12 col-md-12 text-center">
+                <div class="me_card2 background_color3">
                     <h1 class="">
                         <span>Bem Vindo a School-Courses</span> <br>
                     </h1>
@@ -17,14 +17,23 @@
                     </h2>
                 </div>
             </div>
-            <div class="me_card2 background_color3 mt-2 col-sm-8">
-                <img class="w-25 me_img_left" src="{% static 'images/video-aula.png' %}">
-                <div class="">
-                    <h4 class="text-color-light">Vídeo-aulas e materiais digitais</h4>
-                    <h3 class="text-color5">Publique suas aulas</h3>
-                    <p>
-                        O Simple MOOC tem um sistema simples e prático para que o professor disponibilize vídeo-aulas e materiais digitais como: pdf's, slides, imagens ...
-                    </p>
+            <div class="mt-3 col-sm-12 col-md-6">
+                <div class="mecard2 background_color2">
+                    <img class="w-25 me_img_left" src="{% static 'images/video-aula.png' %}">
+                    <div class="">
+                        <h4 class="text-color-light">Vídeo-aulas e materiais digitais</h4>
+                        <h3 class="text-color5">Publique suas aulas</h3>
+                        <p>
+                            O Simple MOOC tem um sistema simples e prático para que o professor disponibilize vídeo-aulas e materiais digitais como: pdf's, slides, imagens ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-md-6 mt-2">
+                <div class="me_card2_video background_color2 text-center">
+                    <div class="me_card_video">
+                        <iframe width="460" src="https://www.youtube.com/embed/bwbFUZj3x8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="me_card3 mt-3 background_color3">
@@ -32,9 +41,9 @@
                      alt="Fórum de Dúvidas">
                 <div class="pure-u-2-3">
                     <div class="l-box">
-                        <h4 class="text-color5">Fórum de Dúvidas <i class="bi bi-stack"></i></h4>
-                        <h3 class="" >Interaja com seus Alunos</h3>
-                        <p>
+                        <h4 class="text-color-light">Fórum de Dúvidas <i class="bi bi-stack"></i></h4>
+                        <h3 class="text-color5" >Interaja com seus Alunos</h3>
+                        <p class="text-lite">
                             No Simple MOOC você pode ter seu próprio sistema de fórum para que seus alunos possam interagir com você e com os outros alunos
                         </p>
                     </div>
@@ -60,8 +69,11 @@
                         <h3 class="text-color5">Envie anúncios diretamente para os alunos</h3>
                         <p class="text-lite">
                             Organize os avisos do seu curso de forma fácil e simples.
+                            Aqui você está certificado que os avisos serão entregues para alunos e turmas.
                         </p>
+
                     </div>
+
                 </div>
             </div>
             <footer class="footer text-center mt-2">

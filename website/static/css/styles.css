@@ -30,11 +30,11 @@
 }
 
 
-.color1 { #000000 };
-.color2 { #7890a8 };
-.color3 { #304878 };
-.color4 { #181848 };
-.color5 { #f0a818 };
+.color1 { color: #000000 };
+.color2 { color: #7890a8 };
+.color3 { color: #304878 };
+.color4 { color: #181848 };
+.color5 { color: #f0a818 };
 
 main {
     font-family: 'Sofia Sans', sans-serif;
@@ -67,7 +67,7 @@ h1 {
 }
 
 .background_color3 {
-    background-color: ;
+    background-color: #304878;
 }
 
 .background_color4 {
@@ -78,27 +78,32 @@ h1 {
     background-color: #f0a818;
 }
 
-.me_card {
+.session_one {
     padding-right: 12px;
     padding-left: 12px;
     padding-top: 95px;
     border-radius: 35px;
-    margin-bottom: 260px;
+    margin-bottom: 280px;
     box-sizing: border-box;
     position: relative;
     animation: frame-box-left 1s 0s 1 normal;
 }
 
+.session {
+    padding: 10;
+    border-radius: 5px;
+}
+
 .me_card2 {
-    padding-top: 75px;
-    border-radius: 25px;
+    padding-top: 35px;
+    border-radius: 15px;
     position: relative;
     animation: frame-box-left 1s 0s 1 normal;
 }
 
 .mecard2 {
-    padding: 35px;
-    border-radius: 25px;
+    padding: 15px;
+    border-radius: 15px;
     box-shadow: 0.1em 0.1em 0.2em black;
     position: relative;
     animation: frame-box-left 1s 0s 1 normal;
@@ -156,15 +161,9 @@ h1 {
     float: left;
 }
 
-body > main > div.p-5.background_color2.me_card > div.card.rounded.background_color2{
-    padding: 20px;
-}
 
-body > main > div.background_color5.me_page > div.me_card.background_color3 > div > h1 {
-    margin-bottom: 35px;
-}
 
-body > main > div > div.me_card.col-sm-12.text-center > div > h1 > span {
+body > main > div > div.session_one.col-sm-12.text-center > div > h1 > span {
     color: #181848;
     text-shadow: 0.1em 0.1em 0.1em #F8F9FA;
     position: relative;
@@ -172,12 +171,6 @@ body > main > div > div.me_card.col-sm-12.text-center > div > h1 > span {
     animation: anime-titles 1.5s 0s 1 normal;
 }
 
-body > main > div > div.me_card.col-sm-12.text-center > div > h2 {
-    color: #7890a8;
-    text-shadow: 0.1em 0.1em 0.1em #181848;
-    position: relative;
-    animation: anime-titles 1.4s 0s 1 normal;
-}
 
 body > main > div.background_color5.me_page > div.me_card.background_color3.mt-2 > div > h4 {
     color: #F8F9FA;
